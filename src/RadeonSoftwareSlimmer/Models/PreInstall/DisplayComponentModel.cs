@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.IO;
 using System.IO.Abstractions;
@@ -92,6 +92,7 @@ namespace RadeonSoftwareSlimmer.Models.PreInstall
                                 (line.IndexOf("ExtendedGraphics", StringComparison.OrdinalIgnoreCase) >= 0 && line.IndexOf("\"", StringComparison.OrdinalIgnoreCase) > 1) ||
                                 line.StartsWith("AMDFDANSName", StringComparison.OrdinalIgnoreCase) ||
                                 line.StartsWith("AMDOCLName", StringComparison.OrdinalIgnoreCase) ||
+                                line.StartsWith("AMDOGLName", StringComparison.OrdinalIgnoreCase) ||
                                 line.StartsWith("AMDWINName", StringComparison.OrdinalIgnoreCase))
                             {
                                 StaticViewModel.AddDebugMessage($"Attempting to obtain inf file description from {line}");

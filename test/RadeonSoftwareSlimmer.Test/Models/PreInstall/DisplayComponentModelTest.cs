@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO.Abstractions;
 using System.IO.Abstractions.TestingHelpers;
 using NUnit.Framework;
@@ -58,6 +58,7 @@ namespace RadeonSoftwareSlimmer.Test.Models.PreInstall
 
         [TestCase("AMDFDANSName")]
         [TestCase("AMDOCLName")]
+        [TestCase("AMDOGLName")]
         [TestCase("AMDWINName")]
         public void Ctor_DescriptionName_DescriptionIsValid(string description)
         {
